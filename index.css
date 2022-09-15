@@ -1,0 +1,151 @@
+#photoModeContainer {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 10;
+    pointer-events: none;
+}
+
+#flash {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background-color: white;
+    z-index: 10;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+#kids{
+  position: absolute;
+  bottom: 10px;
+  z-index: 10;
+  right:  10px;
+}
+
+.flash #flash {
+    opacity: 1;
+    transition: 0s;
+    pointer-events: auto;
+}
+
+#photoModeImage {
+    position: absolute;
+    max-width: 65%;
+    max-height: 65%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 0px 0px 5px white;
+    border-radius: 2vmax;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.photo #photoModeImage {
+    opacity: 1;
+    transition: 0s;
+    pointer-events: auto;
+}
+
+#closeButton {
+    float:right;
+    width: 15vmin;
+    height: 15vmin;
+    background-color: white;
+    bottom: 2vmax;
+    border-radius: 7.5vmin;
+    left: 100%;
+    transform: translateX(-50%);
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    pointer-events: auto;
+}
+
+ #kids{
+        position:fixed;
+        bottom:5px;
+        left:5px;
+        width:70px;
+        max-width:70px;
+    }
+    #sound{
+         position:fixed;
+        bottom:0px;
+        right:0px;
+        max-width:170px;
+    }
+
+#shutterButton{
+    position:fixed;
+    top:10px;
+    right:5px;
+    background-image: url('camera.png');
+    background-size:100%;
+    background-color:transparent;
+    border-radius:0;
+    pointer-events: auto;
+    width:60px;
+    height:60px;
+    background-repeat:no-repeat;
+}
+
+#cameraSwitch{
+  position:fixed;
+  top:40px;
+  right:5px;
+  width:60px;
+  height:60px;
+  background-image: url('camera.png');
+  background-size:100%;
+  background-color:transparent;
+  border-radius:0;
+  pointer-events: auto;
+  background-repeat:no-repeat;
+}
+
+.photo #shutterButton {
+    display: none;
+}
+
+#closeButton {
+    background-image: url('close.jpg');
+    display: none;
+}
+
+.photo #closeButton {
+    display: block;
+}
+
+.loadhide{
+    z-index: 10;
+    width:60px;
+    height:90px;
+    position:fixed;
+    top:50%;
+    left:50%;
+    margin-top:-40px;
+    margin-left:-40px;
+    display:none;
+}
+
+.loadshow{
+    z-index: 10;
+    width:60px;
+    height:90px;
+    position:fixed;
+    top:50%;
+    left:50%;
+    margin-top:-40px;
+    margin-left:-40px;
+    
+}
+
+.hidden {
+    display: none;
+}
